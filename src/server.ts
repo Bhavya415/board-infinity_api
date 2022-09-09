@@ -23,8 +23,7 @@ app.get("/", (req, res) => {
 const start = async () => {
   try {
     const res: any = await mongoose.connect(
-      "mongodb+srv://Task_list:bhavya@cluster0.adtudpx.mongodb.net/test",
-      // `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.iazpd.mongodb.net/?retryWrites=true&w=majority`,
+    `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.iazpd.mongodb.net/?retryWrites=true&w=majority`,
       {}
     );
     console.log("MongoDB cloud atlas connected");
